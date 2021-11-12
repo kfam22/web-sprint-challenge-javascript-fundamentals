@@ -25,14 +25,26 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read.
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
+-The .map() method returns a new array which contains the the results of the function called on each item of the original array.  It can be used for converting data, for example, converting each item in an array to lower case or multiplying each item in an array by 10.
+
+-The .reduce() method returns a single value after applying the provided callback function(the reducer) to each element. The return value from the previous items reducer is passed to the next element until a single value is returned at the end. This can be used to find totals, averages, and other calculations of the arrays contents.
+
+-The .filter() method returns a new array with the items that return true to the function provided.  This can be used to find specific items from an array for example it could return all users that are students from an array of lambda school users that includes both students and staff.
 
 2. Explain the difference between a callback and a higher order function.
+- a callback function is a function that is used as a parameter or passed into a function, while a higher order function  receives other functions as arguments.
 
 3. Explain what a closure is.
+- A closure is when an inner function reaches to an outer function to obtain a value defined in the outer function.  Closure gives an inner function access to the scope of it's outer function.
 
 4. Describe the four principles of the 'this' keyword.
+- window binding: if 'this' has no context, it will return the window or undefined
+-implicit binding: when an object has a method, 'this' refers to the object to the left of the dot when the method is invoked
+-explicit binding: 'this' is explicitly defined with .call, .apply, or .bind
+-new binding: when a new object is created with the new keyword, 'this' refers to the new object
 
 5. Why do we need super() in an extended class?
+-Super allows the child class to inherit from the parent class
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
